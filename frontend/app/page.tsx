@@ -1,0 +1,19 @@
+import Hero from "@/components/hero"
+import About from "@/components/about"
+import Projects from "@/components/projects"
+import Events from "@/components/events"
+import Team from "@/components/team"
+import Contact from "@/components/contact"
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      <Hero />
+      <About />
+      <Projects />
+      <Events />
+      <Team />
+      <Contact />
+    </main>
+  )
+}
