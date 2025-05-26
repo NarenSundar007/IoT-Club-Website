@@ -60,18 +60,12 @@ export default function Contact() {
             <CardContent className="space-y-4">
               <div className="flex items-center">
                 <MapPin className="mr-3 h-5 w-5 text-muted-foreground" />
-                <span>Engineering Building, Room 305, University Campus</span>
+                <span>Amrita Vishwa Vidyapeetham,Coimbatore</span>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-3 h-5 w-5 text-muted-foreground" />
                 <Link href="mailto:info@inteliotclub.edu" className="hover:underline">
-                  info@inteliotclub.edu
-                </Link>
-              </div>
-              <div className="flex items-center">
-                <Phone className="mr-3 h-5 w-5 text-muted-foreground" />
-                <Link href="tel:+1234567890" className="hover:underline">
-                  (123) 456-7890
+                  inteliotclub@gmail.com
                 </Link>
               </div>
 
@@ -79,21 +73,21 @@ export default function Contact() {
                 <h3 className="mb-4 font-medium">Follow Us</h3>
                 <div className="flex space-x-4">
                   <Link
-                    href="#"
+                    href="https://github.com/Intel-IoT-Club"
                     className="text-muted-foreground transition-all duration-300 hover:text-primary hover:scale-110"
                   >
                     <Github className="h-6 w-6" />
                     <span className="sr-only">GitHub</span>
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/company/intel-iot-club/"
                     className="text-muted-foreground transition-all duration-300 hover:text-primary hover:scale-110"
                   >
                     <Linkedin className="h-6 w-6" />
                     <span className="sr-only">LinkedIn</span>
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/inteliotclub/"
                     className="text-muted-foreground transition-all duration-300 hover:text-primary hover:scale-110"
                   >
                     <Instagram className="h-6 w-6" />

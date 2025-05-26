@@ -40,7 +40,9 @@ export default function Navbar() {
             </Link>
           ))}
           <ThemeToggle />
-          <Button size="sm">Join the Club</Button>
+          <Button size="sm" asChild>
+            <Link href="/contact">Join the Club</Link>
+          </Button>
         </nav>
 
         {/* Mobile Navigation Toggle */}
@@ -69,7 +71,9 @@ export default function Navbar() {
           ))}
           <div className="flex items-center justify-between px-3 py-2">
             <ThemeToggle />
-            <Button className="w-auto">Join the Club</Button>
+            <Button className="w-auto" asChild>
+              <Link href="/contact">Join the Club</Link>
+            </Button>
           </div>
         </div>
       </div>
