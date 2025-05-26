@@ -8,6 +8,7 @@ export default function Events() {
   const upcomingEvents = [
     {
       id: 1,
+      image: "/placeholder.jpg",
       name: "IoT Workshop Series",
       date: "June 15, 2024",
       time: "2:00 PM - 5:00 PM",
@@ -16,6 +17,7 @@ export default function Events() {
     },
     {
       id: 2,
+      image: "/placeholder.jpg",
       name: "Hackathon: Smart Campus Solutions",
       date: "July 10-12, 2024",
       time: "48-hour event",
@@ -24,6 +26,7 @@ export default function Events() {
     },
     {
       id: 3,
+      image: "/placeholder.jpg",
       name: "Guest Lecture: Future of IoT",
       date: "August 5, 2024",
       time: "4:00 PM - 6:00 PM",
@@ -35,6 +38,7 @@ export default function Events() {
   const pastEvents = [
     {
       id: 4,
+      image: "/placeholder.jpg",
       name: "IoT Project Showcase",
       date: "April 20, 2024",
       time: "1:00 PM - 4:00 PM",
@@ -43,6 +47,7 @@ export default function Events() {
     },
     {
       id: 5,
+      image: "/placeholder.jpg",
       name: "Workshop: IoT Security Fundamentals",
       date: "March 15, 2024",
       time: "3:00 PM - 5:00 PM",
@@ -51,6 +56,7 @@ export default function Events() {
     },
     {
       id: 6,
+      image: "/placeholder.jpg",
       name: "Intel IoT Roadshow",
       date: "February 10, 2024",
       time: "10:00 AM - 4:00 PM",
@@ -60,6 +66,7 @@ export default function Events() {
   ]
 
   interface Event {
+    image: string
     id: number
     name: string
     date: string
@@ -71,10 +78,21 @@ export default function Events() {
   const EventCard = ({ event }: { event: Event }) => (
     <Card className="mb-4">
       <CardHeader>
-        <CardTitle>{event.name}</CardTitle>
-        <CardDescription className="flex items-center gap-1">
-          <CalendarDays className="h-4 w-4" /> {event.date}
-        </CardDescription>
+        <div className="flex items-center gap-4">
+          <div className="h-36 w-36 flex-shrink-0 overflow-hidden rounded-md bg-muted flex items-center justify-center">
+            <img
+              src={event.image || "/placeholder.jpg"}
+              alt={event.name + " poster"}
+              className="object-cover h-full w-full"
+            />
+          </div>
+          <div>
+            <CardTitle>{event.name}</CardTitle>
+            <CardDescription className="flex items-center gap-1">
+              <CalendarDays className="h-4 w-4" /> {event.date}
+            </CardDescription>
+          </div>
+        </div>
       </CardHeader>
       <CardContent>
         <div className="space-y-2">

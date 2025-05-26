@@ -37,7 +37,7 @@ export default function Hero() {
             className="rounded-full border-primary/20 px-6 py-2 transition-all duration-300 hover:border-primary/50 hover:bg-primary/5"
             asChild
           >
-            <Link href="#projects">Explore Projects</Link>
+            <Link href="/projects">Explore Projects</Link>
           </Button>
 
         </div>
