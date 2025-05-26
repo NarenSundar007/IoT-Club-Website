@@ -5,7 +5,7 @@ import Hero3D from "@/components/hero-3d"
 
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-gradient-to-b from-background to-muted py-20 md:py-32">
+    <section id="home" className="relative overflow-hidden bg-gradient-to-b from-background to-muted py-20 md:py-32 mb-0 pb-0">
       <Hero3D />
 
       <div className="container relative z-10 flex flex-col items-center justify-center text-center">

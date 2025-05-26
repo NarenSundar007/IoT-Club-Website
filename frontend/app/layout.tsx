@@ -9,8 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Intel IoT Club",
-  description: "Empowering Innovation through Intel IoT technologies",
-    generator: 'v0.dev'
+  description: "Empowering Innovation through Intel IoT technologies"
 }
 
 export default function RootLayout({
